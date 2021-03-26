@@ -13,12 +13,17 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
+      <HeaderContainer>
+        <Header />
+      </HeaderContainer>
+
       <Main>
         <SectionHome />
-        <FooterContainer>
-          <Footer />
-        </FooterContainer>
       </Main>
+
+      <FooterContainer>
+        <Footer />
+      </FooterContainer>
     </Container>
   );
 }
@@ -27,12 +32,27 @@ const Container = styled.div`
   display: flex;
   flex-direction: column;
   flex: 1;
+  align-items: center;
+`;
+
+const HeaderContainer = styled.div`
+  display: flex;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  background-color: transparent;
+  padding: 30px;
+  z-index: 10;
+  max-width: 1200px;
 `;
 
 const Main = styled.div`
   display: flex;
   flex-direction: column;
   flex: 1;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
 `;
 
 const FooterContainer = styled.div`
