@@ -68,8 +68,14 @@ export default function SectionAbout() {
 
 const Container = styled.div`
   display: flex;
+  flex-direction: row;
   padding: 30px;
   margin: 70px 0px;
+
+  @media (max-width: 900px) {
+    flex-direction: column;
+    align-items: center;
+  }
 `;
 
 const ContainerImage = styled.div`
@@ -77,6 +83,7 @@ const ContainerImage = styled.div`
   width: 450px;
   margin-right: 40px;
   border: 1px solid #ddd;
+  margin-bottom: 50px;
 `;
 
 const ImageProfile = styled.image`
