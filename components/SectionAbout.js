@@ -39,21 +39,25 @@ export default function SectionAbout() {
         <strong>Let’s build something cool.</strong>
         <AreaTextLinks>
           <label>Mail: </label>
-          <a href="thiago.camargo@outlook.com">thiago.camargo@outlook.com</a>
+          <a target="_blank" href="thiago.camargo@outlook.com">
+            thiago.camargo@outlook.com
+          </a>
         </AreaTextLinks>
         <AreaTextLinks>
           <label>Phone: </label>
-          <a href="+5513996973155">+55 (13) 99697-3155</a>
+          <a target="_blank" href="+5513996973155">
+            +55 (13) 99697-3155
+          </a>
         </AreaTextLinks>
         <AreaTextLinks>
           <label>LinkedIn: </label>
-          <a href="https://www.linkedin.com/in/thiagorcamargo">
+          <a target="_blank" href="https://www.linkedin.com/in/thiagorcamargo">
             https://www.linkedin.com/in/thiagorcamargo
           </a>
         </AreaTextLinks>
         <AreaTextLinks>
           <label>GitHub: </label>
-          <a href="https://github.com/tcamargo10">
+          <a target="_blank" href="https://github.com/tcamargo10">
             https://github.com/tcamargo10
           </a>
         </AreaTextLinks>
