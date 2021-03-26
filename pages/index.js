@@ -4,6 +4,7 @@ import styled from "styled-components";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import SectionHome from "../components/SectionHome";
+import SectionAbout from "../components/SectionAbout";
 
 export default function Home() {
   return (
@@ -18,7 +19,8 @@ export default function Home() {
       </HeaderContainer>
 
       <Main>
-        <SectionHome />
+        <SectionHome id="#home" />
+        <SectionAbout id="#about" />
       </Main>
 
       <FooterContainer>
@@ -42,7 +44,7 @@ const HeaderContainer = styled.div`
   top: 0;
   background-color: transparent;
   padding: 30px;
-  z-index: 10;
+  z-index: 100;
   max-width: 1200px;
 `;
 
