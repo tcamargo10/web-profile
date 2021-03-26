@@ -1,10 +1,14 @@
 import styled from "styled-components";
 
-export default function Button({ childen }) {
-  return <ContainerButton>{childen}</ContainerButton>;
+export default function Button({ children, link }) {
+  return (
+    <ContainerButton href={link} target="_blank">
+      {children}
+    </ContainerButton>
+  );
 }
 
-const ContainerButton = styled.div`
+const ContainerButton = styled.a`
   width: 150px;
   border: medium none;
   color: #fff;

@@ -8,7 +8,9 @@ export default function SectionHome() {
         <Title>Thiago</Title>
         <Title>Camargo</Title>
         <Role>Software Engineer</Role>
-        <Button>Resume</Button>
+        <Button link={"/assets/Thiago_Camargo_Resume_03_2021.pdf"}>
+          Resume
+        </Button>
       </Contain>
     </Container>
   );

@@ -58,7 +58,9 @@ export default function SectionAbout() {
           </a>
         </AreaTextLinks>
 
-        <Button>Resume</Button>
+        <Button link={"/assets/Thiago_Camargo_Resume_03_2021.pdf"}>
+          Resume
+        </Button>
       </ContainerText>
     </Container>
   );
