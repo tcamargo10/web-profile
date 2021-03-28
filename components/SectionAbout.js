@@ -39,13 +39,13 @@ export default function SectionAbout() {
         <strong>Let’s build something cool.</strong>
         <AreaTextLinks>
           <label>Mail: </label>
-          <a target="_blank" href="thiago.camargo@outlook.com">
+          <a target="_blank" href="mailto:thiago.camargo@outlook.com">
             thiago.camargo@outlook.com
           </a>
         </AreaTextLinks>
         <AreaTextLinks>
           <label>Phone: </label>
-          <a target="_blank" href="+5513996973155">
+          <a target="_blank" href="tel:+5513996973155">
             +55 (13) 99697-3155
           </a>
         </AreaTextLinks>
