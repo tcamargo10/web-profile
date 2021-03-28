@@ -61,7 +61,7 @@ const Title = styled.div`
   color: white;
 
   @media (max-width: 600px) {
-    font-size: 30px;
+    font-size: 35px;
   }
 `;
 
@@ -71,6 +71,6 @@ const Role = styled.div`
   margin-top: 10px;
 
   @media (max-width: 600px) {
-    font-size: 15px;
+    font-size: 16px;
   }
 `;

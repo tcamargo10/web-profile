@@ -1,11 +1,12 @@
 import styled from "styled-components";
 import Button from "../components/Button";
+import Image from "next/image";
 
 export default function SectionAbout() {
   return (
     <Container>
       <ContainerImage>
-        <ImageProfile src={"/assets/thiago.jpeg"} />
+        <ImageProfile src={"/assets/thiago.jpeg"} alt="thiago" />
       </ContainerImage>
       <ContainerText>
         <h2>Hello! I'm Thiago Camargo,</h2>
@@ -88,7 +89,6 @@ const ContainerImage = styled.div`
   height: 470px;
   width: 450px;
   margin-right: 40px;
-  border: 1px solid #ddd;
   margin-bottom: 50px;
 
   @media (max-width: 500px) {
@@ -98,8 +98,8 @@ const ContainerImage = styled.div`
   }
 `;
 
-const ImageProfile = styled.image`
-  height: 100%;
+const ImageProfile = styled.img`
+  height: 100;
   width: 100%;
 `;
 

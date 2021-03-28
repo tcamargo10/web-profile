@@ -28,7 +28,7 @@ const ContainerButton = styled.a`
   }
 
   @media (max-width: 600px) {
-    padding: 10px 0px;
+    padding: 12px 0px;
     width: 120px;
   }
 `;
