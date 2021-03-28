@@ -46,7 +46,7 @@ const Contain = styled.div`
   height: 100%;
   width: 100%;
   justify-content: center;
-  padding: 30px;
+  padding: 15px;
   max-width: 1200px;
   z-index: 10;
 `;
@@ -57,13 +57,20 @@ const Title = styled.div`
   text-transform: uppercase;
   letter-spacing: 15px;
   line-height: 1.2;
-  margin-right: -20px;
   font-weight: 800;
   color: white;
+
+  @media (max-width: 600px) {
+    font-size: 30px;
+  }
 `;
 
 const Role = styled.div`
   color: white;
   font-size: 18px;
   margin-top: 10px;
+
+  @media (max-width: 600px) {
+    font-size: 15px;
+  }
 `;

@@ -34,7 +34,7 @@ export default function Home() {
       </Head>
 
       <HeaderContainer scrolled={scrolled}>
-        <Header />
+        <Header scrolled={scrolled} />
       </HeaderContainer>
 
       <Main>
@@ -55,7 +55,6 @@ const Container = styled.div`
   flex: 1;
   width: 100%;
   align-items: center;
-  background-color: green;
 `;
 
 const HeaderContainer = styled.div`

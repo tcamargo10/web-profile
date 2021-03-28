@@ -36,6 +36,10 @@ const Container = styled.div`
   align-items: center;
   justify-content: center;
   color: white;
+
+  @media (max-width: 900px) {
+    font-size: 12px;
+  }
 `;
 
 const GroupIcons = styled.div`
@@ -43,6 +47,10 @@ const GroupIcons = styled.div`
   justify-content: space-around;
   padding: 10px;
   width: 220px;
+
+  @media (max-width: 900px) {
+    width: 180px;
+  }
 `;
 
 const IconButton = styled.a`

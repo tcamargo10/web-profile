@@ -3,13 +3,13 @@ import LaptopIcon from "@material-ui/icons/LaptopMac";
 import MenuIcon from "@material-ui/icons/Menu";
 import Button from "@material-ui/core/Button";
 
-export default function Header() {
+export default function Header({ scrolled }) {
   return (
     <Container>
       <LaptopIcon style={{ fontSize: 33 }} />
       <AreaMenu>
-        <AreaMenuIcon>
-          <MenuIcon style={{ fontSize: 33 }} />
+        <AreaMenuIcon scrolled={scrolled}>
+          <MenuIcon style={{ fontSize: 28 }} />
         </AreaMenuIcon>
         <Menu>
           <a href="#home">Home</a>
@@ -30,7 +30,7 @@ const Container = styled.div`
   align-items: center;
   background: inherit;
   max-width: 1200px;
-  padding: 15px 0;
+  padding: 15px 15px;
   transition: all ease 0.6s;
 `;
 
@@ -64,11 +64,16 @@ const Menu = styled.div`
 const AreaMenuIcon = styled(Button)`
   &&& {
     display: none;
+    padding: 0px;
+    border: 2px solid;
+    color: ${(props) => (props.scrolled ? "#444" : "white")};
+    border-color: ${(props) => (props.scrolled ? "#444" : "white")};
   }
 
   @media (max-width: 900px) {
     &&& {
       display: flex;
+      flex-direction: column;
     }
   }
 `;

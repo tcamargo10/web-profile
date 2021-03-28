@@ -26,4 +26,9 @@ const ContainerButton = styled.a`
   :hover {
     background-color: #007bff;
   }
+
+  @media (max-width: 600px) {
+    padding: 10px 0px;
+    width: 120px;
+  }
 `;

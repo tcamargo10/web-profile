@@ -73,13 +73,14 @@ export default function SectionAbout() {
 const Container = styled.div`
   display: flex;
   flex-direction: row;
-  padding: 30px;
+  padding: 15px;
   margin: 70px 0px;
   max-width: 1200px;
 
   @media (max-width: 900px) {
     flex-direction: column;
     align-items: center;
+    justify-content: center;
   }
 `;
 
@@ -89,6 +90,12 @@ const ContainerImage = styled.div`
   margin-right: 40px;
   border: 1px solid #ddd;
   margin-bottom: 50px;
+
+  @media (max-width: 500px) {
+    height: 350px;
+    width: 100%;
+    margin-right: 0px;
+  }
 `;
 
 const ImageProfile = styled.image`
@@ -112,11 +119,19 @@ const ContainerText = styled.div`
     font-weight: normal;
     line-height: 25px;
     color: #666;
+
+    @media (max-width: 600px) {
+      font-size: 13px;
+    }
   }
 
   strong {
     margin: 15px 0px;
     font-size: 18px;
+
+    @media (max-width: 600px) {
+      font-size: 15px;
+    }
   }
 
   label {
@@ -127,6 +142,10 @@ const ContainerText = styled.div`
 const AreaTextLinks = styled.div`
   margin-bottom: 8px;
   font-size: 15px;
+
+  @media (max-width: 600px) {
+    font-size: 13.5px;
+  }
 
   a {
     text-decoration: none;
