@@ -6,6 +6,7 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import SectionHome from "../components/SectionHome";
 import SectionAbout from "../components/SectionAbout";
+import SectionProjects from "../components/SectionProjects";
 
 export default function Home() {
   const [scrolled, setScrolled] = useState(false);
@@ -40,6 +41,7 @@ export default function Home() {
       <Main>
         <SectionHome id="#home" />
         <SectionAbout id="#about" />
+        <SectionProjects id="#projects" />
       </Main>
 
       <FooterContainer>

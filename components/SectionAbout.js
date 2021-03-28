@@ -10,7 +10,7 @@ export default function SectionAbout() {
       </ContainerImage>
       <ContainerText>
         <h2>Hello! I'm Thiago Camargo,</h2>
-        <h2>A Full Stack Developer</h2>
+        <h2>A FrontEnd Developer</h2>
         <h2>From Iguape, SP.</h2>
         <p>
           After graduating with a bachelor’s in biology, I found myself in a
