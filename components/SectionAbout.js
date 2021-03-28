@@ -75,6 +75,7 @@ const Container = styled.div`
   flex-direction: row;
   padding: 30px;
   margin: 70px 0px;
+  max-width: 1200px;
 
   @media (max-width: 900px) {
     flex-direction: column;
@@ -107,6 +108,10 @@ const ContainerText = styled.div`
 
   p {
     margin-bottom: 0px;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 25px;
+    color: #666;
   }
 
   strong {

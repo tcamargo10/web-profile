@@ -6,10 +6,10 @@ import Button from "@material-ui/core/Button";
 export default function Header() {
   return (
     <Container>
-      <LaptopIcon style={{ color: "white", fontSize: 33 }} />
+      <LaptopIcon style={{ fontSize: 33 }} />
       <AreaMenu>
         <AreaMenuIcon>
-          <MenuIcon style={{ color: "white", fontSize: 33 }} />
+          <MenuIcon style={{ fontSize: 33 }} />
         </AreaMenuIcon>
         <Menu>
           <a href="#home">Home</a>
@@ -28,6 +28,10 @@ const Container = styled.div`
   display: flex;
   width: 100%;
   align-items: center;
+  background: inherit;
+  max-width: 1200px;
+  padding: 15px 0;
+  transition: all ease 0.6s;
 `;
 
 const AreaMenu = styled.div`
@@ -46,7 +50,6 @@ const Menu = styled.div`
   align-items: center;
 
   a {
-    color: white;
     margin-left: 40px;
     font-size: 15px;
     font-weight: 600;
