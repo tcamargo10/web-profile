@@ -7,9 +7,32 @@ import Footer from "../components/Footer";
 import SectionHome from "../components/SectionHome";
 import SectionAbout from "../components/SectionAbout";
 import SectionProjects from "../components/SectionProjects";
+import SectionGrid from "../components/SectionGrid";
 
 export default function Home() {
   const [scrolled, setScrolled] = useState(false);
+
+  const dataSkills = [
+    { img: "javascript-original.svg", text: "JavaScript" },
+    { img: "react-original.svg", text: "React.js" },
+    { img: "redux-original.svg", text: "Redux" },
+    { img: "nextjs-original.svg", text: "Next.js" },
+    { img: "nodejs-original.svg", text: "Node.js" },
+    { img: "express-original.svg", text: "Express" },
+    { img: "html5-original.svg", text: "HTML 5" },
+    { img: "css3-original.svg", text: "CSS 3" },
+  ];
+
+  const dataTools = [
+    { img: "visualstudio-plain.svg", text: "Visual Studio Code" },
+    { img: "git-original.svg", text: "Git" },
+    { img: "github-original.svg", text: "GitHub" },
+    { img: "docker-original.svg", text: "Docker" },
+    { img: "npm-original.svg", text: "NPM" },
+    { img: "yarn.svg", text: "Yarn" },
+    { img: "slack-original.svg", text: "Slack" },
+    { img: "trello-plain.svg", text: "Trello" },
+  ];
 
   useEffect(() => {
     const scrollListener = () => {
@@ -42,6 +65,20 @@ export default function Home() {
         <SectionHome id="#home" />
         <SectionAbout id="#about" />
         <SectionProjects id="#projects" />
+        <SectionGrid
+          id="#skills"
+          data={dataSkills}
+          TitleText={"Skills"}
+          SubtitleText={
+            "Languages and Technologies that I have learned and applied to my projects"
+          }
+        />
+        <SectionGrid
+          id="#tools"
+          data={dataTools}
+          TitleText={"Tools"}
+          SubtitleText={"My weapons of choice to help tackle any project."}
+        />
       </Main>
 
       <FooterContainer>

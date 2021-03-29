@@ -50,7 +50,7 @@ const Container = styled.div`
   width: 100%;
   align-items: center;
   justify-content: center;
-  margin: 120px 0px;
+  margin: 90px 0px;
   max-width: 1200px;
 `;
 
@@ -60,6 +60,7 @@ const AreaHeader = styled.div`
   padding: 0px 15px;
   align-items: center;
   justify-content: center;
+  margin-bottom: 10px;
 `;
 
 const Title = styled.h3`
