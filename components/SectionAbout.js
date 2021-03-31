@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import Button from "../components/Button";
-import Image from "next/image";
 
 export default function SectionAbout() {
   return (
@@ -10,34 +9,34 @@ export default function SectionAbout() {
       </ContainerImage>
       <ContainerText>
         <h2>Hello! I'm Thiago Camargo,</h2>
-        <h2>A FrontEnd Developer</h2>
+        <h2>A Front-End Developer</h2>
         <h2>From Iguape, SP.</h2>
         <p>
-          After graduating with a bachelor’s in biology, I found myself in a
-          stable career as a microbiologist for a major brewery. While the idea
-          of working at a brewery was definitely a great conversation starter, I
-          realized that although I still had a love for science, the industry I
-          was in was lacking in creativity and problem solving. After dabbling
-          with some introductory JavaScript courses on the internet and
-          exploring programming through self-teaching, I decided to take a leap
-          of faith and made a switch in careers into tech.
+          I have been working in the IT area since I was 17 and initially had +5
+          years of experience in Support / Infra, where I worked in high
+          availability environments, serving more than 5,000 employees and a
+          park of more than 2,000 computers. I worked as a technical leader and
+          as a team coordinator, taking care of the team recruitment,
+          attendance, metrics, reports, inventory, problem solving, among
+          others. In 2020 I started studies and work in the area of ​​systems
+          development, today with +1 year as a software developer I focus on
+          Front-End and Mobile with Stack React.
         </p>
         <p>
-          Through LearningFuze, I have developed a strong understanding of
-          JavaScript (ES5 & ES6), React, Node.js, Express, PostgreSQL, HTML5,
-          and CSS3. As a developer, I find a lot of joy and excitement utilizing
-          my skills to help troubleshoot bugs and pushing projects forward. I
-          enjoy learning new technologies and growing in a field that is
-          constantly being pushed to new boundaries.
+          I had the opportunity to work recently in some projects where I can
+          apply and learn various technical and process knowledge, such as Agile
+          Methodologies, componentization and code optimization. And use various
+          technologies and tools to create scalable and personalized solutions
+          for our customers, applying pre-defined business rules, solving
+          problems and generating value for the company and customers.
         </p>
         <p>
-          Feel free to connect with me! Let's talk about web dev, tech, sports,
-          photography, video games, cooking, or how I can be of help to your
-          team or business! I'd love to get to know more developers and expand
-          my network. I also know a thing or two about beer.
+          I always seek to be studying and improving myself with the newest
+          technologies, good practices and agiles. I love new challenges and
+          solving problems.
         </p>
 
-        <strong>Let’s build something cool.</strong>
+        <strong>Let's create a project together?</strong>
         <AreaTextLinks>
           <label>Mail: </label>
           <a target="_blank" href="mailto:thiago.camargo@outlook.com">
