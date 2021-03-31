@@ -1,9 +1,14 @@
 import React from "react";
 import styled from "styled-components";
 import Item from "./Item.js";
-export default function SectionSkills({ data, TitleText, SubtitleText }) {
+export default function SectionSkills({
+  data,
+  TitleText,
+  SubtitleText,
+  ...rest
+}) {
   return (
-    <Container>
+    <Container {...rest}>
       <AreaHeader>
         <Title>{TitleText}</Title>
         <SubTitle>{SubtitleText}</SubTitle>

@@ -1,9 +1,9 @@
 import styled from "styled-components";
 import Button from "../components/Button";
 
-export default function SectionHome() {
+export default function SectionHome({ ...rest }) {
   return (
-    <Container>
+    <Container {...rest}>
       <Contain>
         <Title>Thiago</Title>
         <Title>Camargo</Title>

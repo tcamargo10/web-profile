@@ -1,9 +1,9 @@
 import styled from "styled-components";
 import Button from "../components/Button";
 
-export default function SectionAbout() {
+export default function SectionAbout({ ...rest }) {
   return (
-    <Container>
+    <Container {...rest}>
       <ContainerImage>
         <ImageProfile src={"/assets/thiago.jpeg"} alt="thiago" />
       </ContainerImage>

@@ -1,9 +1,9 @@
 import React from "react";
 import styled from "styled-components";
 
-function SectionProjects() {
+function SectionProjects({ ...rest }) {
   return (
-    <Container>
+    <Container {...rest}>
       <AreaHeader>
         <Title>Projects</Title>
         <SubTitle>
@@ -15,26 +15,52 @@ function SectionProjects() {
       <ContainerProjects>
         <Project>
           <ImageProject
-            src={"/assets/portifolio/cmra-preview.png"}
-            alt="project 1"
+            src={"/assets/portifolio/grupo-sa.png"}
+            alt="grupo sa"
           />
-          <TextProject>CMRA</TextProject>
+          <ContainerDetails>
+            <TextProject>Grupo SA</TextProject>
+            <DescriptionProject>
+              Front-end: Software interno para controle de pedidos, cliente,
+              orçamentos, histórico, contas, controle de produção, relatórios,
+              entre outros.
+            </DescriptionProject>
+            <DescriptionProject>
+              Html, Css, JS, React, RestAPI, Material UI, Context, GIT.
+            </DescriptionProject>
+          </ContainerDetails>
+        </Project>
+
+        <Project>
+          <ImageProject src={"/assets/portifolio/oimba.png"} alt="oimba" />
+          <ContainerDetails>
+            <TextProject>Oimba</TextProject>
+            <DescriptionProject>
+              Front-end: Site institucional e painel administrativo interno para
+              controle clientes, relatórios, pedidos, etc.
+            </DescriptionProject>
+            <DescriptionProject>
+              Html, Css, JS, React, RestAPI, Bootstrap, GIT.
+            </DescriptionProject>
+          </ContainerDetails>
         </Project>
 
         <Project>
           <ImageProject
-            src={"/assets/portifolio/like-preview.png"}
-            alt="project 2"
+            src={"/assets/portifolio/netflix-clone.png"}
+            alt="netflix clone"
           />
-          <TextProject>Like</TextProject>
-        </Project>
-
-        <Project>
-          <ImageProject
-            src={"/assets/portifolio/cookin-preview.png"}
-            alt="project 3"
-          />
-          <TextProject>Cookin</TextProject>
+          <ContainerDetails>
+            <TextProject>Netflix Clone</TextProject>
+            <DescriptionProject>
+              Desenvolvido para treinar conhecimentos de Html, Css e Reactjs
+              tendo como modelo o site do Netflix. Utilizado como fonte de dados
+              Site tmdb.com onde o sistema consome a API através da API_KEY.
+            </DescriptionProject>
+            <DescriptionProject>
+              Html, Css, Material UI, React, StyledComp, RestAPI e GIT.
+            </DescriptionProject>
+          </ContainerDetails>
         </Project>
       </ContainerProjects>
     </Container>
@@ -92,16 +118,35 @@ const ContainerProjects = styled.div`
 const Project = styled.div`
   display: flex;
   flex-direction: column;
+  border-radius: 5px;
   align-items: center;
   border: 1px solid whitesmoke;
+  background-color: whitesmoke;
+  height: 100%;
 `;
 
 const ImageProject = styled.img`
-  height: 80%;
+  height: 300px;
   width: 100%;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
 `;
 
 const TextProject = styled.p`
   font-size: 17px;
   font-weight: bold;
+  margin: 15px 0px;
+`;
+
+const ContainerDetails = styled.div`
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+`;
+
+const DescriptionProject = styled.p`
+  font-size: 12px;
+  padding: 0px 15px;
 `;
