@@ -7,7 +7,7 @@ export default function SectionHome() {
       <Contain>
         <Title>Thiago</Title>
         <Title>Camargo</Title>
-        <Role>Software Engineer</Role>
+        <Role>Front-End Developer</Role>
         <Button link={"/assets/Thiago_Camargo_Resume_03_2021.pdf"}>
           Resume
         </Button>
