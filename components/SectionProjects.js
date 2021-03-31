@@ -47,7 +47,7 @@ function SectionProjects({ ...rest }) {
 
         <Project>
           <ImageProject
-            src={"/assets/portifolio/netflix-clone.png"}
+            src={"/assets/portifolio/netflix-clone.PNG"}
             alt="netflix clone"
           />
           <ContainerDetails>
